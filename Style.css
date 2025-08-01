@@ -1,0 +1,77 @@
+body {
+    height: 100vh;
+    background: linear-gradient(to top, #afc9d8, #45aacc);
+    align-items: center;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.weather-container {
+    height: 400px;
+    width: 350px;
+    border-radius: 6px;
+    /* background-color: rgba(255, 255, 255, 0.9); slight transparency */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+h1 {
+    margin-top: 40px;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btn {
+    background: linear-gradient(135deg, #1e90ff, #0072ff);
+    height: 50px;
+    width: 25vh;
+    border: none;
+    margin-top: 20PX;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.btn:hover{
+      background: linear-gradient(135deg, #0066cc, #004c99); /* darker on hover */
+  transform: scale(1.05)
+}
+.btn:active{
+    background: linear-gradient(135deg, #05488f, #024385);
+     transform: scale(1.05)
+}
+
+input {
+  padding: 12px;
+  width: 80%;
+  font-size: 18px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input:focus {
+  border-color: #0072ff;
+  box-shadow: 0 0 8px rgba(0, 114, 255, 0.3);
+} 
+input::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+#result{
+    margin-top: 50px;
+    font-size: 2rem;
+    font-weight: bold;
+}
