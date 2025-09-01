@@ -15,6 +15,7 @@ function onSubmit() {
     })
     .catch((error) => {
       console.error("Error:", error);
-      document.querySelector("#result").innerText = "City not found ❌";
+      document.querySelector("#result").innerText = "City not found ";
     });
 }
+
